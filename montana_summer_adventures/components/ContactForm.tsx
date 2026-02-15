@@ -194,7 +194,7 @@ export default function ContactForm() {
               {adventures.map((adventure) => (
                 <label
                   key={adventure}
-                  className={`flex items-center p-3 border-2 rounded-lg cursor-pointer transition-all ${
+                  className={`flex items-center p-3 border-2 rounded-lg cursor-pointer transition-all focus-within:ring-2 focus-within:ring-earth-500 focus-within:ring-offset-0 ${
                     formData.adventures.includes(adventure)
                       ? "border-earth-600 bg-earth-50"
                       : "border-gray-300 hover:border-earth-400"
@@ -204,7 +204,7 @@ export default function ContactForm() {
                     type="checkbox"
                     checked={formData.adventures.includes(adventure)}
                     onChange={() => handleAdventureChange(adventure)}
-                    className="w-5 h-5 text-earth-600 border-gray-300 rounded focus:ring-2 focus:ring-earth-500 focus:ring-offset-0 rounded-md"
+                    className="w-5 h-5 text-earth-600 border-gray-300 rounded-md focus:outline-none"
                   />
                   <span className="ml-3 text-gray-700 font-medium">{adventure}</span>
                 </label>
