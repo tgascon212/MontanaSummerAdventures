@@ -204,7 +204,7 @@ export default function ContactForm() {
                     type="checkbox"
                     checked={formData.adventures.includes(adventure)}
                     onChange={() => handleAdventureChange(adventure)}
-                    className="w-5 h-5 text-earth-600 border-gray-300 rounded focus:ring-2 focus:ring-earth-500"
+                    className="w-5 h-5 text-earth-600 border-gray-300 rounded focus:ring-2 focus:ring-earth-500 focus:ring-offset-0 rounded-md"
                   />
                   <span className="ml-3 text-gray-700 font-medium">{adventure}</span>
                 </label>
