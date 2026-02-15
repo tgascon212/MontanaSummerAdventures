@@ -12,6 +12,8 @@ const adventures = [
   "Trail Ride",
   "Rifle Shooting",
   "Wildlife Viewing",
+  "Cabin Rental",
+  "Other",
 ];
 
 export default function ContactForm() {
@@ -129,7 +131,7 @@ export default function ContactForm() {
                 value={formData.phone}
                 onChange={handleChange}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-earth-500 focus:border-transparent outline-none transition"
-                placeholder="(406) 555-1234"
+                placeholder="(406) 360-8106"
               />
             </div>
 
@@ -255,8 +257,8 @@ export default function ContactForm() {
         <div className="mt-12 text-center">
           <p className="text-gray-600 mb-2">
             Or call us directly at{" "}
-            <a href="tel:+14065551234" className="text-earth-600 font-semibold hover:text-earth-800">
-              (406) 555-1234
+            <a href="tel:+14063608106" className="text-earth-600 font-semibold hover:text-earth-800">
+              (406) 360-8106
             </a>
           </p>
           <p className="text-gray-600">
