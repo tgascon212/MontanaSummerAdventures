@@ -124,7 +124,7 @@ export default function ContactForm() {
                 required
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-earth-500 focus:border-transparent outline-none transition"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-earth-500 focus:border-transparent outline-none transition text-gray-900"
                 placeholder="John Doe"
               />
             </div>
@@ -141,7 +141,7 @@ export default function ContactForm() {
                 required
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-earth-500 focus:border-transparent outline-none transition"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-earth-500 focus:border-transparent outline-none transition text-gray-900"
                 placeholder="john@example.com"
               />
             </div>
@@ -158,7 +158,7 @@ export default function ContactForm() {
                 required
                 value={formData.phone}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-earth-500 focus:border-transparent outline-none transition"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-earth-500 focus:border-transparent outline-none transition text-gray-900"
                 placeholder="(406) 360-8106"
               />
             </div>
@@ -177,7 +177,7 @@ export default function ContactForm() {
                 required
                 value={formData.guests}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-earth-500 focus:border-transparent outline-none transition"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-earth-500 focus:border-transparent outline-none transition text-gray-900"
               />
             </div>
 
@@ -192,7 +192,7 @@ export default function ContactForm() {
                 name="startDate"
                 value={formData.startDate}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-earth-500 focus:border-transparent outline-none transition"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-earth-500 focus:border-transparent outline-none transition text-gray-900"
               />
             </div>
 
@@ -208,7 +208,7 @@ export default function ContactForm() {
                 value={formData.endDate}
                 onChange={handleChange}
                 min={formData.startDate}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-earth-500 focus:border-transparent outline-none transition"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-earth-500 focus:border-transparent outline-none transition text-gray-900"
               />
             </div>
           </div>
@@ -254,7 +254,7 @@ export default function ContactForm() {
               rows={5}
               value={formData.message}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-earth-500 focus:border-transparent outline-none transition resize-none"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-earth-500 focus:border-transparent outline-none transition resize-none text-gray-900"
               placeholder="Tell us about any special requests, experience level, or questions you have..."
             />
           </div>
