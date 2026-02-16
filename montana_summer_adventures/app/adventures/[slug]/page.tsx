@@ -418,7 +418,7 @@ export default async function AdventurePage({ params }: { params: Promise<{ slug
       {/* What's Included Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">What's Included</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">What&apos;s Included</h2>
           <div className="bg-white p-8 rounded-lg shadow-md border border-gray-200">
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {adventure.included.map((item, index) => (
@@ -472,7 +472,7 @@ export default async function AdventurePage({ params }: { params: Promise<{ slug
           <div className="bg-gradient-to-br from-earth-600 to-earth-700 p-10 md:p-16 rounded-xl text-center shadow-2xl">
             <h2 className="text-4xl font-bold text-white mb-6">Ready for This Adventure?</h2>
             <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
-              Contact us today to book your {adventure.title} experience. We'll answer any questions
+              Contact us today to book your {adventure.title} experience. We&apos;ll answer any questions
               and help you plan the perfect Montana adventure.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

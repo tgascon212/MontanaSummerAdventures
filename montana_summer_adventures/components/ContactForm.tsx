@@ -77,7 +77,7 @@ export default function ContactForm() {
             Book Your Adventure
           </h2>
           <p className="text-xl text-gray-600">
-            Fill out the form below and we'll get back to you within 24 hours to plan your perfect Montana experience.
+            Fill out the form below and we&apos;ll get back to you within 24 hours to plan your perfect Montana experience.
           </p>
         </div>
 
