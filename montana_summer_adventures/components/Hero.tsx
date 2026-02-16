@@ -18,7 +18,7 @@ export default function Hero() {
           Experience the Real Montana
         </h1>
         <p className="text-xl sm:text-2xl md:text-3xl text-white mb-8 drop-shadow-md max-w-3xl mx-auto">
-          Authentic Western Adventures in the Heart of Big Sky Country
+          Authentic Adventures in the Heart of Big Sky Country
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
