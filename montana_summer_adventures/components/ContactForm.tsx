@@ -50,22 +50,50 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitMessage("");
 
-    // Simulate form submission - Replace with actual API call
-    setTimeout(() => {
-      setSubmitMessage("Thank you! We'll contact you soon to plan your adventure.");
-      setIsSubmitting(false);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        adventures: [],
-        guests: "1",
-        startDate: "",
-        endDate: "",
-        message: "",
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "605c93fc-3cb4-468b-a02e-e916b1b88bb2",
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          adventures: formData.adventures.join(", "),
+          guests: formData.guests,
+          start_date: formData.startDate,
+          end_date: formData.endDate,
+          message: formData.message,
+          subject: "New Adventure Inquiry from Montana Summer Adventures",
+        }),
       });
-    }, 1000);
+
+      const data = await response.json();
+
+      if (data.success) {
+        setSubmitMessage("Thank you! We&apos;ll contact you soon to plan your adventure.");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          adventures: [],
+          guests: "1",
+          startDate: "",
+          endDate: "",
+          message: "",
+        });
+      } else {
+        setSubmitMessage("Something went wrong. Please try again or call us directly.");
+      }
+    } catch (error) {
+      setSubmitMessage("Something went wrong. Please try again or call us directly.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
