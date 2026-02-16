@@ -75,7 +75,7 @@ export default function ContactForm() {
       const data = await response.json();
 
       if (data.success) {
-        setSubmitMessage("Thank you! We&apos;ll contact you soon to plan your adventure.");
+        setSubmitMessage("Thank you! We will contact you soon to plan your adventure.");
         setFormData({
           name: "",
           email: "",
