@@ -4,11 +4,11 @@ export default function Hero() {
       {/* Background Image Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/20 z-10"></div>
 
-      {/* Background Image - Replace with actual Montana image */}
+      {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2070&auto=format&fit=crop')",
+          backgroundImage: "url('/images/hero-main.jpg')",
         }}
       />
 
